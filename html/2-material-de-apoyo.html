@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" id="exe-page-mpb53uca-q3hw3uy0w">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2. Material de apoyo | Transacciones en MySQL</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mpb53uca-q3hw3uy0w" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Propuesta para el alumnado</a>
+<ul class="other-section">
+<li> <a href="../html/1-materiales-sobre-transacciones-en-mysql.html" class="no-ch">1. Materiales sobre transacciones en MySQL</a>
+</li>
+<li class="active"> <a href="../html/2-material-de-apoyo.html" class="active no-ch">2. Material de apoyo</a>
+</li>
+<li> <a href="../html/3-actividad-1-infografia.html" class="no-ch">3. Actividad 1. Infografía</a>
+</li>
+<li> <a href="../html/4-actividad-2-video.html" class="no-ch">4. Actividad 2. Video</a>
+</li>
+<li> <a href="../html/5-glosario-de-terminos.html" class="no-ch">5. Glosario de términos</a>
+</li>
+<li> <a href="../html/6-juegos-para-aprender.html" class="no-ch">6. Juegos para aprender</a>
+</li>
+<li> <a href="../html/7-atribucion-y-descarga.html" class="no-ch">7. Atribución y descarga</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mpb53uca-q3hw3uy0w" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Transacciones en MySQL</p></div>
+<div class="page-header"><h1 class="page-title">2. Material de apoyo</h1></div>
+</header><div id="page-content-page-mpb53uca-q3hw3uy0w" class="page-content">
+<article id="20260427190453QMILLD" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="202604272029524215W3" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;202604272029524215W3&quot;}">
+<div class="exe-text-template">
+    <h5 style="text-align: justify;"><b>Puedes utilizar la siguiente guía de estudio como material de apoyo</b></h5>
+<p>Esta guía ha sido diseñada para proporcionar una revisión exhaustiva sobre el manejo de transacciones, niveles de aislamiento, optimización de consultas y control de concurrencia en el motor de almacenamiento InnoDB de MySQL, basándose en la documentación técnica y académica proporcionada.</p>
+<p>--------------------------------------------------------------------------------</p>
+<p><strong>Cuestionario de Repaso</strong><br />A continuación, se presentan diez preguntas de respuesta corta para evaluar la comprensión de los conceptos fundamentales.</p>
+<ol>
+<li>¿Qué define a una transacción en el contexto de MySQL y cuál es su importancia?</li>
+<li>Explique brevemente las cuatro propiedades del acrónimo ACID.</li>
+<li>¿Qué es el modo autocommit y cómo afecta el comportamiento de las sentencias SQL individuales?</li>
+<li>¿Cuáles son los principales inconvenientes de mantener transacciones de larga duración en InnoDB?</li>
+<li>Defina el concepto de "interbloqueo" (deadlock) en un entorno de base de datos.</li>
+<li>¿En qué consiste el problema de "Lectura Sucia" (Dirty Read) y en qué nivel de aislamiento ocurre?</li>
+<li>¿Cuál es la función principal del comando EXPLAIN en el ajuste de consultas?</li>
+<li>Describa la utilidad del comando SAVEPOINT dentro de una transacción.</li>
+<li>¿Qué diferencia existe entre una Lectura No Repetible y una Lectura Fantasma?</li>
+<li>¿Cómo influye la existencia de índices en la reducción de interbloqueos?<br />--------------------------------------------------------------------------------</li>
+</ol>
+<p><strong>Clave de Respuestas</strong></p>
+<ol>
+<li>Una transacción es una unidad lógica de trabajo que agrupa una secuencia de operaciones para que se ejecuten de forma indivisible o atómica. Su importancia radica en garantizar la integridad y consistencia de los datos, asegurando que todas las operaciones tengan éxito o que ninguna se aplique si ocurre un error.</li>
+<li>Las propiedades ACID son: Atomicidad (se ejecutan todas las sentencias o ninguna), Consistencia (la base de datos pasa de un estado válido a otro), Aislamiento (las transacciones concurrentes no interfieren entre sí) y Durabilidad (los cambios confirmados son permanentes). Estas reglas aseguran que el sistema sea fiable ante fallos o accesos simultáneos.</li>
+<li>El modo autocommit es una configuración que, cuando está activada, trata cada sentencia SQL individual como una transacción completa con su propio inicio y confirmación implícita. Si se inicia una transacción explícita mediante START TRANSACTION, este modo se deshabilita temporalmente hasta que se ejecute un COMMIT o ROLLBACK.</li>
+<li>Las transacciones largas provocan contenciones de bloqueo prolongadas, ralentizan el servidor debido a la acumulación de registros de cancelación de modificaciones (undo logs) y aumentan el uso del disco. Además, pueden extender significativamente el tiempo de cierre del servidor y el proceso de recuperación tras un fallo del sistema.</li>
+<li>Un interbloqueo sucede cuando dos o más transacciones intentan bloquear recursos (como filas de una tabla) en órdenes opuestos, quedando cada una a la espera de que la otra libere su bloqueo. InnoDB detecta estas situaciones automáticamente y suele cancelar una de las transacciones mediante un rollback para resolver el conflicto.</li>
+<li>La "Lectura Sucia" ocurre cuando una transacción lee datos que han sido modificados por otra transacción pero que aún no han sido confirmados. Este problema es característico del nivel de aislamiento READ UNCOMMITTED y puede llevar a inconsistencias si la transacción original realiza un rollback.</li>
+<li>El comando EXPLAIN proporciona el plan de ejecución que MySQL utilizará para procesar una consulta, detallando qué índices se emplean y cuántas filas se analizan. Es una herramienta fundamental para identificar ineficiencias, como escaneos completos de tablas, y optimizar el rendimiento del acceso a los datos.</li>
+<li>SAVEPOINT permite establecer un punto intermedio de recuperación dentro de una transacción activa. Esto ofrece la flexibilidad de deshacer solo una parte de las operaciones realizadas mediante un ROLLBACK TO SAVEPOINT, sin necesidad de abortar la transacción completa.</li>
+<li>La Lectura No Repetible ocurre cuando un mismo dato cambia de valor al ser consultado dos veces en la misma transacción debido a una actualización externa confirmada. La Lectura Fantasma se produce cuando, al repetir una consulta de rango, aparecen o desaparecen filas nuevas insertadas o eliminadas por otra transacción.</li>
+<li>Los índices permiten que las consultas examinen menos registros, lo que reduce la cantidad de bloqueos establecidos en los registros de índice. Al minimizar el alcance del bloqueo, disminuye drásticamente la probabilidad de que dos transacciones compitan por el mismo recurso y generen un deadlock.<br />--------------------------------------------------------------------------------</li>
+</ol>
+<p><strong>Temas para Preguntas de Ensayo</strong><br />Las siguientes propuestas están diseñadas para fomentar un análisis profundo de la materia:</p>
+<ul>
+<li><strong>Estrategias de Mitigación de Interbloqueos:</strong> Analice cómo el diseño de la aplicación, el orden de acceso a las tablas y la configuración de los índices contribuyen a reducir la frecuencia de deadlocks en sistemas con alta concurrencia.</li>
+<li><strong>Equilibrio entre Consistencia y Rendimiento:</strong> Compare los cuatro niveles de aislamiento de transacciones (desde READ UNCOMMITTED hasta SERIALIZABLE), evaluando los riesgos de integridad frente a las ganancias en la velocidad de procesamiento.</li>
+<li><strong>El Ciclo de Vida del Ajuste de Consultas:</strong> Describa el proceso integral de optimización de una consulta, desde su captura en el "log lento" hasta el análisis con EXPLAIN y la implementación de cambios en el esquema o la sesión.<br />Arquitectura de InnoDB y el Control de Multiversión (MVCC): Explique cómo InnoDB utiliza los registros de cancelación de modificaciones para permitir lecturas consistentes y cómo las transacciones de larga duración impactan negativamente en este mecanismo.</li>
+<li><strong>Programación de Lógica Transaccional:</strong> Discuta las ventajas y precauciones necesarias al implementar transacciones dentro de procedimientos almacenados, considerando el manejo de errores (DECLARE HANDLER) y la atomicidad de las operaciones.<br />--------------------------------------------------------------------------------</li>
+</ul>
+<p></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/1-materiales-sobre-transacciones-en-mysql.html" title="Previous" class="nav-button nav-button-left"><span>Previous</span></a>
+<a href="../html/3-actividad-1-infografia.html" title="Next" class="nav-button nav-button-right"><span>Next</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

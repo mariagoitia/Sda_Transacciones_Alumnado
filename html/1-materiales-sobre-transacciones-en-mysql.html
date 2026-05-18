@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" id="exe-page-mpb53uc8-io9an14pu">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1. Materiales sobre transacciones en MySQL | Transacciones en MySQL</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mpb53uc8-io9an14pu" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li class="current-page-parent"> <a href="../index.html" class="main-node daddy">Propuesta para el alumnado</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/1-materiales-sobre-transacciones-en-mysql.html" class="active no-ch">1. Materiales sobre transacciones en MySQL</a>
+</li>
+<li> <a href="../html/2-material-de-apoyo.html" class="no-ch">2. Material de apoyo</a>
+</li>
+<li> <a href="../html/3-actividad-1-infografia.html" class="no-ch">3. Actividad 1. Infografía</a>
+</li>
+<li> <a href="../html/4-actividad-2-video.html" class="no-ch">4. Actividad 2. Video</a>
+</li>
+<li> <a href="../html/5-glosario-de-terminos.html" class="no-ch">5. Glosario de términos</a>
+</li>
+<li> <a href="../html/6-juegos-para-aprender.html" class="no-ch">6. Juegos para aprender</a>
+</li>
+<li> <a href="../html/7-atribucion-y-descarga.html" class="no-ch">7. Atribución y descarga</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mpb53uc8-io9an14pu" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">Transacciones en MySQL</p></div>
+<div class="page-header"><h1 class="page-title">1. Materiales sobre transacciones en MySQL</h1></div>
+</header><div id="page-content-page-mpb53uc8-io9an14pu" class="page-content">
+<article id="20260427190453XQNXXF" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260427201826453UK5" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260427201826453UK5&quot;}">
+<div class="exe-text-template">
+    <p><strong>1. Definición de Transacción</strong><br />Una transacción es una unidad lógica de trabajo que comprende una o más sentencias SQL. Su objetivo principal es asegurar que la base de datos pase de un estado consistente a otro, evitando datos parciales o corruptos en caso de error en el sistema.</p>
+<p> <strong>Propiedades ACID (El Estándar de Excelencia)</strong></p>
+<p><strong>Atomicidad (A): </strong>Las instrucciones se ejecutan como un bloque único; o se hacen todas o ninguna.</p>
+<p><strong>Consistencia (C):</strong> La base de datos debe cumplir todas las reglas de integridad antes y después del proceso.</p>
+<p> <strong>Aislamiento (I):</strong> Las operaciones son invisibles para otros usuarios hasta que la transacción finaliza.</p>
+<p> <strong>Durabilidad (D):</strong> Una vez confirmados los cambios, estos son permanentes ante cualquier fallo.</p>
+<p>  <br /><strong>2. Comandos Fundamentales</strong><br /></p>
+<p><img src="../content/resources/comandos_transacciones.jpg" width="815" height="582" alt="Comandos transacciones" /></p>
+<p> <br /><strong>3. Ejemplo de Implementación</strong> </p>
+<p>En un sistema de gestión de campeonatos, para inscribir a un alumno y asignarle un hardware de forma segura:</p>
+<p><img src="../content/resources/ejemplo transaccion.jpg" width="790" height="362" alt="Ejemplo transacción en MySQL" /> </p>
+<p><strong>4. Niveles de Aislamiento</strong><br />Permiten configurar la visibilidad de los datos entre transacciones concurrentes:</p>
+<ul>
+<li><strong>READ UNCOMMITTED</strong>: Permite lecturas de datos no confirmados (riesgo de datos sucios).</li>
+<li><strong>READ COMMITTED</strong>: Solo lee datos que ya han sido confirmados por otros.</li>
+<li><strong>REPEATABLE READ</strong>: (Nivel por defecto en MySQL/InnoDB) Asegura lecturas consistentes durante toda la transacción.</li>
+<li><strong>SERIALIZABLE</strong>: Máximo nivel de seguridad; las transacciones se ejecutan en orden estricto</li>
+</ul>
+</div>
+</div>
+</div>
+</article><article id="block-1778009125399-ucyku4cgo" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Texto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1778009125397-98lhn11cf" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1778009125397-98lhn11cf&quot;}">
+<div class="exe-text-template">
+    <p><video width="560" height="315" controls="controls">
+<source src="../content/resources/Mi video.mp4" type="video/mp4" /></video></p>
+<p></p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../index.html" title="Previous" class="nav-button nav-button-left"><span>Previous</span></a>
+<a href="../html/2-material-de-apoyo.html" title="Next" class="nav-button nav-button-right"><span>Next</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>
